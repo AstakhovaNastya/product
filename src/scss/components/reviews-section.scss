@@ -1,0 +1,116 @@
+.reviews-section {
+  margin-bottom: 60px;
+  @media(min-width: $desktop-width) {
+    margin-bottom: 156px;
+  }
+}
+
+.reviews-title {
+  text-align: center;
+  max-width: 537px;
+  margin: 0 auto 50px;
+  h2 {
+    letter-spacing: 0.2px;
+    margin-bottom: 8px;
+    @media(min-width: $tablet-width) {
+      font-size: 34px;
+      line-height: 57px;
+    }
+  }
+  p {
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+  }
+}
+
+.reviews-list {
+  @media(min-width: $mobile-landscape-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  @media(min-width: $desktop-width) {
+    margin: 0 -32px;
+  }
+  li {
+    display: flex;
+    padding-bottom: 30px;
+    @media(min-width: $mobile-landscape-width) {
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding: 0 15px 30px;
+    }
+    @media(min-width: $tablet-width) {
+      flex: 0 0 33.3%;
+      max-width: 33.3%;
+      padding-bottom: 0;
+    }
+    @media(min-width: $desktop-width) {
+      padding: 0 32px;
+    }
+  }
+}
+
+.reviews-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid $card-border;
+  border-radius: 5px;
+  padding: 28px 26px 23px;
+  background-color: $base-bg;
+  .dark-theme & {
+    background-color: $bg-color-darktheme;
+  }
+  .rating {
+    display: flex;
+    margin-bottom: 16px;
+    .icon-star {
+      font-size: 18px;
+      padding-right: 4px;
+      color: $stars-color;
+    }
+  }
+  & > p {
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    margin-bottom: 16px;
+    color: #737373;
+    .dark-theme & {
+      color: $base-color-darktheme;
+    }
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+  }
+  .photo-wrap {
+    border: 1px solid #BDBDBD;
+    border-radius: 50%;
+    margin-right: 14px;
+    min-width: 50px;
+    overflow: hidden;
+    height: 50px;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .author {
+    letter-spacing: 0.2px;
+    h4 {
+      color: $brand-color;
+    }
+    p {
+      margin-bottom: 0;
+      font-size: 14px;
+      line-height: 24px;
+      color: #252B42;
+      font-weight: 500;
+      .dark-theme & {
+        color: $base-color-darktheme;
+      }
+    }
+  }
+}

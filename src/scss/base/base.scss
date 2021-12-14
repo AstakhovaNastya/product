@@ -1,0 +1,83 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  font-weight: $font-weight-base;
+  color: $base-color;
+  background-color: $base-bg;
+}
+
+body {
+  .dark-theme & {
+    color: $base-color-darktheme;
+    background-color: $bg-color-darktheme;
+  }
+}
+
+#wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+p {
+  margin-bottom: 25px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $brand-color;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 40px;
+  @media(min-width: $tablet-width) {
+    font-size: 35px;
+  }
+  @media(min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 35px;
+  @media(min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 600;
+}
+
+h4 {
+ font-size: 16px;
+ line-height: 24px;
+ font-weight: 600;
+}
+
